@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+	function changeColor(id) {
+		document.getElementById(id).style.backgroundColor = getRandomColor();
+	}
+
+	function getRandomColor() {
+	   var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+       return color;
+    }
+</script>
+<h1>The ol element</h1>
+
+<ol>
+  <li id=1 onclick="changeColor(1)">Coffee</li>
+  <li id=2 onclick="changeColor(2)">Tea</li>
+  <li id=3 onclick="changeColor(3)">Milk</li>
+</ol>
+
+</body>
+</html>
